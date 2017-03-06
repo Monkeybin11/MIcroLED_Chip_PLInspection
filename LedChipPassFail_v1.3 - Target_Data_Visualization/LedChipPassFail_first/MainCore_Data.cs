@@ -11,6 +11,7 @@ using Emgu.CV.UI;
 using Emgu.CV.Util;
 using LedChipPassFail_first.Data;
 using System.Windows.Media;
+using Math_Tool.Statistic;
 
 namespace LedChipPassFail_first
 {
@@ -18,6 +19,8 @@ namespace LedChipPassFail_first
     {
         public ImgPData PData;
         public ImgPResult PResult;
+        public Statistic_Tool<string,bool> Analysis = new Statistic_Tool<string,bool>();
+
         public Image<Gray,byte> OriginImg;
         public Image<Bgr,byte> ColorOriImg;
         public Image<Bgr,byte> ProcedImg;
@@ -33,6 +36,7 @@ namespace LedChipPassFail_first
         public readonly int BinSize = 100;
         public List<System.Drawing.PointF> PassChipList;
         public List<System.Drawing.PointF> FailChipList;
+        public Dictionary<string,dynamic> Confusion_Matrix;
 
         public Dictionary<string,TargetNG> TargetNgBook = new Dictionary<string, TargetNG>();
         public Dictionary<int[] , Dictionary<string,dynamic>> TargetData;

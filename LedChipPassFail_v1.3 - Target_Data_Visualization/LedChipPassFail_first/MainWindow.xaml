@@ -76,7 +76,7 @@
 
 
                     <Label Grid.Row="11" Grid.Column="0" Content="Target Factor" FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="20,0,10,0" FontSize="14" />
-                    <TextBox x:Name="txbFactorName"  Grid.Row="11" Grid.Column="1" Text="IR5V,VF1" Height="20" Width="120"  VerticalAlignment="Center"  HorizontalAlignment="Center" TextAlignment="Right"/>
+                    <TextBox x:Name="txbFactorName"  Grid.Row="11" Grid.Column="1" Text="Full" Height="20" Width="120"  VerticalAlignment="Center"  HorizontalAlignment="Center" TextAlignment="Right"/>
 
                     <Grid Grid.Row="12" Grid.ColumnSpan="2">
                         <Label Content=" Factor List : Full , IR5V , VF1 , VF2 , VF3 , VF1IR "  VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="20,0,10,0" FontSize="12" />
@@ -152,12 +152,12 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="45"/>
-                        <RowDefinition Height="45"/>
-                        <RowDefinition Height="45"/>
-                        <RowDefinition Height="45"/>
-                        <RowDefinition Height="45"/>
-                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="43"/>
+                        <RowDefinition Height="43"/>
+                        <RowDefinition Height="43"/>
+                        <RowDefinition Height="43"/>
+                        <RowDefinition Height="43"/>
+                        <RowDefinition Height="43"/>
                     </Grid.RowDefinitions>
                     <Border BorderThickness="3" BorderBrush="#FF086F9E" Margin="3,3,3,3" Grid.ColumnSpan="2" Grid.RowSpan="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
@@ -187,18 +187,26 @@
 
                     <Border BorderThickness="3" BorderBrush="#FF086F9E" Margin="3,3,3,3" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
-                    <Label Grid.Row="0" Grid.Column="2" Content="Process Time(um) :"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="12" />
-                    <Label x:Name="lblRunningTime"  Grid.Row="0" Grid.Column="2" Content="0"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="12" />
+                    <Label Grid.Row="0" Grid.Column="2" Content="Process Time(um) :"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,0"  FontSize="12" />
+                    <Label x:Name="lblRunningTime"  Grid.Row="0" Grid.Column="3" Content="0"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="12" />
 
-                    <Label Grid.Row="1" Grid.Column="2" Content="Total Chip :"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="12" />
+                    <Label Grid.Row="1" Grid.Column="2" Content="Total Chip :"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,0"  FontSize="12" />
                     <Label x:Name="lblTotalChip"  Grid.Row="1" Grid.Column="3" Content="0"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="12" />
 
-                    <Label Grid.Row="2" Grid.Column="2" Content="Pass Chip :"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="12" />
+                    <Label Grid.Row="2" Grid.Column="2" Content="Pass Chip :"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,0"  FontSize="12" />
                     <Label x:Name="lblPassChipnum"  Grid.Row="2" Grid.Column="3" Content="0"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="12" />
 
-                    <Label Grid.Row="3" Grid.Column="2" Content="Fail Chip :"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="12" />
+                    <Label Grid.Row="3" Grid.Column="2" Content="Fail Chip :"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,0"  FontSize="12" />
                     <Label x:Name="lblFailChipnum"  Grid.Row="3" Grid.Column="3" Content="0"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="12" />
-                    
+
+                    <Label Grid.Row="4" Grid.Column="2" Content=" Accuracy :"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,0"  FontSize="12" />
+                    <Label x:Name="lblAccuracy"  Grid.Row="4" Grid.Column="3" Content="0"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="12" />
+
+                    <Label Grid.Row="5" Grid.Column="2" Content="Specificity :"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,0"  FontSize="12" />
+                    <Label x:Name="lblSpecificity"  Grid.Row="5" Grid.Column="3" Content="0"    FontWeight="Bold" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="10,0"  FontSize="12" />
+
+
+
                 </Grid>
             </Grid>
 

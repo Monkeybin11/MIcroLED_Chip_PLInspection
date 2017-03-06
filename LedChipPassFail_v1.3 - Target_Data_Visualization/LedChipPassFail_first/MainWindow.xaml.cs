@@ -231,6 +231,10 @@ namespace LedChipPassFail_first
             lblFailChipnum.BeginInvoke( () => lblFailChipnum.Content = Core.PResult.ChipFailCount );
             lblTotalChip.BeginInvoke( ()=> lblTotalChip.Content = Core.PData.ChipHNum * Core.PData.ChipWNum );
 
+            Core.Analysis_Processing();
+
+            this.BeginInvoke( () => lblAccuracy.Content = Core.Confusion_Matrix["Accuracy"]);
+            this.BeginInvoke( () => lblSpecificity.Content = Core.Confusion_Matrix["Specificity"] );
             //DisplayResultHisto(Core.PResult);
         }
         private void btnSaveData_Click( object sender , RoutedEventArgs e )

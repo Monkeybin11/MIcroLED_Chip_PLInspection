@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emgu_processingTool", "D:\0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util_Tool", "D:\04UtilPro\Util_Tool\Util_Tool\Util_Tool.csproj", "{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math_Tool", "D:\04UtilPro\Util_Tool\Math_Tool\Math_Tool.csproj", "{FE08158D-342F-4E22-A839-935E35B2CD6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,14 @@ Global
 		{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}.Release|x64.ActiveCfg = Release|x64
 		{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}.Release|x64.Build.0 = Release|x64
+		{FE08158D-342F-4E22-A839-935E35B2CD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE08158D-342F-4E22-A839-935E35B2CD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE08158D-342F-4E22-A839-935E35B2CD6D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FE08158D-342F-4E22-A839-935E35B2CD6D}.Debug|x64.Build.0 = Debug|Any CPU
+		{FE08158D-342F-4E22-A839-935E35B2CD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE08158D-342F-4E22-A839-935E35B2CD6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE08158D-342F-4E22-A839-935E35B2CD6D}.Release|x64.ActiveCfg = Release|Any CPU
+		{FE08158D-342F-4E22-A839-935E35B2CD6D}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

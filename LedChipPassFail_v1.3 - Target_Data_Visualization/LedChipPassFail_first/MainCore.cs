@@ -23,8 +23,6 @@ namespace LedChipPassFail_first
 {
     public partial class MainCore
     {
-
-
         #region Init
         public MainCore()
         {
@@ -99,7 +97,6 @@ namespace LedChipPassFail_first
                     // Draw EstedPoint on Image and Cavnas 
                     targetimg = DrawCenterPoint( targetimg , estedChipP );
 
-                    //  여기에서 각 NG타입에 따른 체크 및 드로잉 함수의 리스트를 만든다. 
 
                     #region check pass fail
                     var boximg = ColorOriImg.Clone();
@@ -155,27 +152,44 @@ namespace LedChipPassFail_first
             failchipDisplayData[j , i , 1] = ( byte ) ( failchipDisplayData[j , i , 1] * 0.5 );
             failchipDisplayData[j , i , 2] = 200;
         }
-        // Paint Target Ng Chip Position
-
-        void PaintTargetList()
-        {
-
-
-        }
-
-
-
         #endregion
 
+        public void Analysis_Processing()
+        {
+            string[] target;
+            bool[] predict;
 
+            Load_Target_Predict( out target , out predict );
+            if( target != null )
+            {
+                var compare = Analysis.Convert2intLabel( target , predict , "OK" , true );
+                Confusion_Matrix = Analysis.ConfusionMatrix( compare["Target"] , compare["Predict"] );
+            }
+        }
+
+        void Load_Target_Predict(out string[] target ,out bool[] predict ) {
+            if( TargetData.Count > 0 )
+            {
+                target = new string[PResult.OutData.Count];
+                predict = new bool[PResult.OutData.Count];
+
+                for( int i = 0 ; i < PResult.OutData.Count ; i++ )
+                {
+                    var y = PResult.OutData[i].Hindex;
+                    var x = PResult.OutData[i].Windex;
+                    predict[i] = PResult.OutData[i].PassFail;
+                    target[i] = TargetData[new int[2] { y , x }]["Label"];
+                }
+            }
+            else
+            {
+                target = null;
+                predict = null;
+            }
+        }
         #endregion
 
         #region Save & Load
-
-        //public void SaveImg ( Image<Bgr,byte> img , string path )
-        //{
-        //    img.Save( path );
-        //}
 
     public void SaveImg( dynamic img , string path )
         {

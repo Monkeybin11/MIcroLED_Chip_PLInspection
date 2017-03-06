@@ -136,9 +136,6 @@ namespace LedChipPassFail_first
                     CircleF cirp = new CircleF();
                     cirp.Center = new PointF( (float)centrPoint[i , j , 1] , (float)centrPoint[i , j , 0] );
                     img.Draw( cirp , new Bgr( 0 , 0 , 250 ) , 1 );
-                    //img.Data[( int ) centrPoint[i , j , 0] , ( int ) centrPoint[i , j , 1] , 0] = 0;
-                    //img.Data[( int ) centrPoint[i , j , 0] , ( int ) centrPoint[i , j , 1] , 1] = 0;
-                    //img.Data[( int ) centrPoint[i , j , 0] , ( int ) centrPoint[i , j , 1] , 2] = 255;
                 } );
             } );
             return img;
