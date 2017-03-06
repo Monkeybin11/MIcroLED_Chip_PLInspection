@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LedChipPassFail_LGEnotech", "LedChipPassFail_first\LedChipPassFail_LGEnotech.csproj", "{E1D80626-41AE-47FD-942D-43E558DE2CE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emgu_processingTool", "D:\04UtilPro\Util_Tool\Emgu_processingTool\Emgu_processingTool.csproj", "{BACF932B-8350-464B-AC50-BD786C8E5AD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util_Tool", "D:\04UtilPro\Util_Tool\Util_Tool\Util_Tool.csproj", "{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1D80626-41AE-47FD-942D-43E558DE2CE2}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{E1D80626-41AE-47FD-942D-43E558DE2CE2}.Debug|Any CPU.Build.0 = Debug|x64
+		{E1D80626-41AE-47FD-942D-43E558DE2CE2}.Debug|x64.ActiveCfg = Debug|x64
+		{E1D80626-41AE-47FD-942D-43E558DE2CE2}.Debug|x64.Build.0 = Debug|x64
+		{E1D80626-41AE-47FD-942D-43E558DE2CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1D80626-41AE-47FD-942D-43E558DE2CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1D80626-41AE-47FD-942D-43E558DE2CE2}.Release|x64.ActiveCfg = Release|x64
+		{E1D80626-41AE-47FD-942D-43E558DE2CE2}.Release|x64.Build.0 = Release|x64
+		{BACF932B-8350-464B-AC50-BD786C8E5AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACF932B-8350-464B-AC50-BD786C8E5AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACF932B-8350-464B-AC50-BD786C8E5AD8}.Debug|x64.ActiveCfg = Debug|x64
+		{BACF932B-8350-464B-AC50-BD786C8E5AD8}.Debug|x64.Build.0 = Debug|x64
+		{BACF932B-8350-464B-AC50-BD786C8E5AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACF932B-8350-464B-AC50-BD786C8E5AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACF932B-8350-464B-AC50-BD786C8E5AD8}.Release|x64.ActiveCfg = Release|x64
+		{BACF932B-8350-464B-AC50-BD786C8E5AD8}.Release|x64.Build.0 = Release|x64
+		{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}.Debug|x64.ActiveCfg = Debug|x64
+		{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}.Debug|x64.Build.0 = Debug|x64
+		{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}.Release|x64.ActiveCfg = Release|x64
+		{F2C8FA44-3132-4466-93F7-FDE9D1F1B5C5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
